@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "overworld_revived:block/redwood_log_top",
+    "down": "overworld_revived:block/redwood_log_top",
+    "north": "overworld_revived:block/redwood_log_side",
+    "east": "overworld_revived:block/redwood_log_side",
+    "south": "overworld_revived:block/redwood_log_side",
+    "west": "overworld_revived:block/redwood_log_side"
+  }
+}

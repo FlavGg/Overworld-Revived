@@ -1,6 +1,12 @@
 package net.foxbatstudios.overworld_revived;
 
 import com.mojang.logging.LogUtils;
+import com.sun.jna.platform.win32.WinUser;
+import net.foxbatstudios.overworld_revived.block.ModBlocks;
+import net.foxbatstudios.overworld_revived.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -19,13 +25,11 @@ public class Overworld_Revived {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public Overworld_Revived(FMLJavaModLoadingContext context) {
+
         IEventBus modEventBus = context.getModEventBus();
-
-
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
-
         modEventBus.addListener(this::addCreative);
 
     }
@@ -35,7 +39,9 @@ public class Overworld_Revived {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.REDWOOD_LOG);
+        }
     }
 
     @SubscribeEvent
