@@ -44,6 +44,7 @@ public class Overworld_Revived {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModItems.REDWOOD_LOG_ITEM);
+            event.accept(ModItems.REDWOOD_PLANKS_ITEM);
         }
 
     }

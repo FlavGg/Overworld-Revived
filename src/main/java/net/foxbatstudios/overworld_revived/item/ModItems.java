@@ -4,6 +4,7 @@ import net.foxbatstudios.overworld_revived.Overworld_Revived;
 import net.foxbatstudios.overworld_revived.block.ModBlocks;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,6 +16,8 @@ public class ModItems {
 
     public static final RegistryObject<BlockItem> REDWOOD_LOG_ITEM = ITEMS.register("redwood_log_item",
             () -> new BlockItem(ModBlocks.REDWOOD_LOG.get(), new Item.Properties()));
+    public static final RegistryObject<BlockItem> REDWOOD_PLANKS_ITEM = ITEMS.register("redwood_planks_item",
+            () -> new BlockItem(ModBlocks.REDWOOD_PLANKS.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

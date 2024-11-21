@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "overworld_revived:redwood_log_item"
+    }
+  ],
+  "result": {
+    "item": "overworld_revived:redwood_planks_item",
+    "count": 4
+  }
+}
