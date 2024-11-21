@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "overworld_revived:block/redwood_leaves",
+    "particle": "overworld_revived:block/redwood_leaves"
+  }
+}

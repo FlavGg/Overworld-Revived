@@ -4,8 +4,8 @@ import net.foxbatstudios.overworld_revived.Overworld_Revived;
 import net.foxbatstudios.overworld_revived.block.ModBlocks;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -14,10 +14,15 @@ public class ModItems {
     public static final DeferredRegister<Item>ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Overworld_Revived.MOD_ID);
 
+    public static final RegistryObject<Item> OR_LOGO = ITEMS.register("or_logo",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<BlockItem> REDWOOD_LOG_ITEM = ITEMS.register("redwood_log_item",
             () -> new BlockItem(ModBlocks.REDWOOD_LOG.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> REDWOOD_PLANKS_ITEM = ITEMS.register("redwood_planks_item",
             () -> new BlockItem(ModBlocks.REDWOOD_PLANKS.get(), new Item.Properties()));
+    public static final RegistryObject<BlockItem> REDWOOD_LEAVES_ITEM = ITEMS.register("redwood_leaves_item",
+            () -> new BlockItem(ModBlocks.REDWOOD_LEAVES.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -10,5 +10,6 @@
   "result": {
     "item": "overworld_revived:redwood_planks_item",
     "count": 4
-  }
+  },
+  "show_notification": true
 }

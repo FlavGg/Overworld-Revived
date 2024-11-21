@@ -3,6 +3,7 @@ package net.foxbatstudios.overworld_revived;
 import com.mojang.logging.LogUtils;
 import com.sun.jna.platform.win32.WinUser;
 import net.foxbatstudios.overworld_revived.block.ModBlocks;
+import net.foxbatstudios.overworld_revived.item.ModCreativeModTabs;
 import net.foxbatstudios.overworld_revived.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -29,6 +30,7 @@ public class Overworld_Revived {
     public Overworld_Revived(FMLJavaModLoadingContext context) {
 
         IEventBus modEventBus = context.getModEventBus();
+        ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
@@ -45,6 +47,7 @@ public class Overworld_Revived {
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModItems.REDWOOD_LOG_ITEM);
             event.accept(ModItems.REDWOOD_PLANKS_ITEM);
+            event.accept(ModItems.REDWOOD_LEAVES_ITEM);
         }
 
     }
