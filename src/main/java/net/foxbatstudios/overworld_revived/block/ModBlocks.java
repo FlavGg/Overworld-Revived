@@ -20,7 +20,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> REDWOOD_LOG = registerBlock("redwood_log",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

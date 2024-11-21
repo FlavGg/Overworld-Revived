@@ -6,6 +6,7 @@ import net.foxbatstudios.overworld_revived.block.ModBlocks;
 import net.foxbatstudios.overworld_revived.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,6 +18,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 @Mod(Overworld_Revived.MOD_ID)
@@ -27,6 +29,7 @@ public class Overworld_Revived {
     public Overworld_Revived(FMLJavaModLoadingContext context) {
 
         IEventBus modEventBus = context.getModEventBus();
+        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -40,8 +43,9 @@ public class Overworld_Revived {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.REDWOOD_LOG);
+            event.accept(ModItems.REDWOOD_LOG_ITEM);
         }
+
     }
 
     @SubscribeEvent
