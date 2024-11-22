@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "overworld_revived:block/redwood_slabs"
+    },
+    "type=double": {
+      "model": "overworld_revived:block/redwood_planks"
+    },
+    "type=top": {
+      "model": "overworld_revived:block/redwood_slabs_top"
+    }
+  }
+}

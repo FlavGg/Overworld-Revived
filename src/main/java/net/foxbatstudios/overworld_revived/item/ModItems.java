@@ -25,6 +25,9 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.REDWOOD_LEAVES.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> REDWOOD_WOOD_ITEM = ITEMS.register("redwood_wood_item",
             () -> new BlockItem(ModBlocks.REDWOOD_WOOD.get(), new Item.Properties()));
+    public static final RegistryObject<BlockItem> REDWOOD_SLABS_ITEM = ITEMS.register("redwood_slabs_item",
+            () -> new BlockItem(ModBlocks.REDWOOD_SLABS.get(), new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
