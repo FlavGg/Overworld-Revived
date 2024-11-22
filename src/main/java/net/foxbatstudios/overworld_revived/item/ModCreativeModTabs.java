@@ -18,6 +18,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.or_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.REDWOOD_LOG_ITEM.get());
+                        output.accept(ModItems.REDWOOD_WOOD_ITEM.get());
                         output.accept(ModItems.REDWOOD_PLANKS_ITEM.get());
                         output.accept(ModItems.REDWOOD_LEAVES_ITEM.get());
                     })
