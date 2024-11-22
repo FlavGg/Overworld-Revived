@@ -6,9 +6,6 @@ import net.foxbatstudios.overworld_revived.block.ModBlocks;
 import net.foxbatstudios.overworld_revived.item.ModCreativeModTabs;
 import net.foxbatstudios.overworld_revived.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -44,10 +41,8 @@ public class Overworld_Revived {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModItems.REDWOOD_LOG_ITEM);
-            event.accept(ModItems.REDWOOD_PLANKS_ITEM);
-            event.accept(ModItems.REDWOOD_LEAVES_ITEM);
+        {
+
         }
 
     }
