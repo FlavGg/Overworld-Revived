@@ -42,7 +42,7 @@ public class Overworld_Revived {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         {
-          if event.getTabKey()
+
         }
 
     }
