@@ -1,11 +1,9 @@
 package net.foxbatstudios.overworld_revived;
 
 import com.mojang.logging.LogUtils;
-import com.sun.jna.platform.win32.WinUser;
 import net.foxbatstudios.overworld_revived.block.ModBlocks;
 import net.foxbatstudios.overworld_revived.item.ModCreativeModTabs;
 import net.foxbatstudios.overworld_revived.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
