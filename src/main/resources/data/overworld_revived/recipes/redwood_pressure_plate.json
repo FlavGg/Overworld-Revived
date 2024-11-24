@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_pressure_plate",
+  "key": {
+    "#": {
+      "item": "overworld_revived:redwood_planks_item"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "overworld_revived:redwood_pressure_plate_item"
+  },
+  "show_notification": true
+}

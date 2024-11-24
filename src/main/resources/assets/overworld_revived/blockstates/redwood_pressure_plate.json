@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "overworld_revived:block/redwood_pressure_plate"
+    },
+    "powered=true": {
+      "model": "overworld_revived:block/redwood_pressure_plate_down"
+    }
+  }
+}

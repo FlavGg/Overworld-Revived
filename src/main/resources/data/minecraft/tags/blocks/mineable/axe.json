@@ -5,6 +5,7 @@
     "overworld_revived:redwood_wood",
     "overworld_revived:redwood_slabs",
     "overworld_revived:redwood_stairs",
-    "overworld_revived:redwood_button"
+    "overworld_revived:redwood_button",
+    "overworld_revived:redwood_pressure_plate"
   ]
 }
