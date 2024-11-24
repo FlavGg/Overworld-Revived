@@ -23,6 +23,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.REDWOOD_SLABS_ITEM.get());
                         output.accept(ModItems.REDWOOD_STAIRS_ITEM.get());
                         output.accept(ModItems.REDWOOD_LEAVES_ITEM.get());
+                        output.accept(ModItems.REDWOOD_BUTTON_ITEM.get());
                     })
                     .build());
 

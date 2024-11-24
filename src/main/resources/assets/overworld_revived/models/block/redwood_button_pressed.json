@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "overworld_revived:block/redwood_planks"
+  }
+}

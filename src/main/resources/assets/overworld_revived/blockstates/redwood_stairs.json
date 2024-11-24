@@ -42,7 +42,7 @@
       "y": 90
     },
     "facing=east,half=top,shape=straight": {
-      "model": "overworld_revived:block/redwood_stairs_outer",
+      "model": "overworld_revived:block/redwood_stairs",
       "uvlock": true,
       "x": 180
     },
