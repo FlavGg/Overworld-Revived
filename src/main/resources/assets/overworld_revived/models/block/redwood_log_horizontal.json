@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/cube_column_horizontal",
   "textures": {
     "end": "overworld_revived:block/redwood_log_top",
     "side": "overworld_revived:block/redwood_log_side",
