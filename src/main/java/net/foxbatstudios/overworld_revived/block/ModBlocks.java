@@ -2,6 +2,7 @@ package net.foxbatstudios.overworld_revived.block;
 
 import net.foxbatstudios.overworld_revived.Overworld_Revived;
 import net.foxbatstudios.overworld_revived.item.ModItems;
+import net.foxbatstudios.overworld_revived.util.ModTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
