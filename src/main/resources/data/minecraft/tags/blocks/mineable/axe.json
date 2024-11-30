@@ -7,6 +7,8 @@
     "overworld_revived:redwood_stairs",
     "overworld_revived:redwood_button",
     "overworld_revived:redwood_pressure_plate",
-    "overworld_revived:redwood_fence"
+    "overworld_revived:redwood_fence",
+    "overworld_revived:redwood_door",
+    "overworld_revived:redwood_fence_gate"
   ]
 }

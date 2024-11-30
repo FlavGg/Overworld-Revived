@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.REDWOOD_STAIRS_ITEM.get());
                         output.accept(ModItems.REDWOOD_DOOR_ITEM.get());
                         output.accept(ModItems.REDWOOD_FENCE_ITEM.get());
+                        output.accept(ModItems.REDWOOD_FENCE_GATE_ITEM.get());
                         output.accept(ModItems.REDWOOD_PRESSURE_PLATE_ITEM.get());
                         output.accept(ModItems.REDWOOD_BUTTON_ITEM.get());
                         output.accept(ModItems.REDWOOD_LEAVES_ITEM.get());

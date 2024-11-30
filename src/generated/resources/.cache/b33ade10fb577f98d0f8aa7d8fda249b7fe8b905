@@ -1,5 +1,6 @@
-// 1.20.1	2024-11-30T08:33:44.4806617	Tags for minecraft:item mod id overworld_revived
+// 1.20.1	2024-11-30T09:22:45.0455786	Tags for minecraft:item mod id overworld_revived
 ba01e6ece6d1247731a469206fdf8a19162792b3 data/minecraft/tags/items/doors.json
+94053d0dbe8b7dd2b5fee13d1c2d31b7b110c978 data/minecraft/tags/items/fence_gates.json
 2916a644cc6d5238adb8379c4e038267bb7afd2d data/minecraft/tags/items/leaves.json
 893531435bf10cefaf11479762da1d789e011b84 data/minecraft/tags/items/logs.json
 28c7b2f4219fef57353adde6509643f8869021a7 data/minecraft/tags/items/planks.json

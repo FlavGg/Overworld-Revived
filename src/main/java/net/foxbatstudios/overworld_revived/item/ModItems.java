@@ -37,6 +37,8 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.REDWOOD_FENCE.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> REDWOOD_DOOR_ITEM = ITEMS.register("redwood_door_item",
             () -> new BlockItem(ModBlocks.REDWOOD_DOOR.get(), new Item.Properties()));
+    public static final RegistryObject<BlockItem> REDWOOD_FENCE_GATE_ITEM = ITEMS.register("redwood_fence_gate_item",
+            () -> new BlockItem(ModBlocks.REDWOOD_FENCE_GATE.get(), new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
