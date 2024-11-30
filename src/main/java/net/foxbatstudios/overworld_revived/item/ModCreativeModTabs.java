@@ -28,6 +28,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.REDWOOD_PRESSURE_PLATE_ITEM.get());
                         output.accept(ModItems.REDWOOD_BUTTON_ITEM.get());
                         output.accept(ModItems.REDWOOD_LEAVES_ITEM.get());
+                        output.accept(ModItems.REDWOOD_SAPLING_ITEM.get());
                     })
                     .build());
 

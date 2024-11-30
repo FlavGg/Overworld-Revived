@@ -3,6 +3,7 @@ package net.foxbatstudios.overworld_revived.block;
 import net.foxbatstudios.overworld_revived.Overworld_Revived;
 import net.foxbatstudios.overworld_revived.item.ModItems;
 import net.foxbatstudios.overworld_revived.util.ModTags;
+import net.foxbatstudios.overworld_revived.worldgen.tree.RedwoodTreeGrower;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
@@ -44,6 +45,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
     public static final RegistryObject<Block> REDWOOD_FENCE_GATE = registerBlock("redwood_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> REDWOOD_SAPLING = registerBlock("redwood_sapling",
+            () -> new SaplingBlock(new RedwoodTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
