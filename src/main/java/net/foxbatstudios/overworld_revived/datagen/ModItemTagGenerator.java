@@ -29,5 +29,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         tag(ItemTags.WOODEN_PRESSURE_PLATES).add(ModItems.REDWOOD_PRESSURE_PLATE_ITEM.get());
         tag(ItemTags.WOODEN_STAIRS).add(ModItems.REDWOOD_STAIRS_ITEM.get());
         tag(ItemTags.WOODEN_SLABS).add(ModItems.REDWOOD_SLABS_ITEM.get());
+        tag(ItemTags.DOORS).add(ModItems.REDWOOD_DOOR_ITEM.get());
     }
 }

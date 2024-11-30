@@ -27,5 +27,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         tag(BlockTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.REDWOOD_PRESSURE_PLATE.get());
         tag(BlockTags.WOODEN_SLABS).add(ModBlocks.REDWOOD_SLABS.get());
         tag(BlockTags.WOODEN_STAIRS).add(ModBlocks.REDWOOD_STAIRS.get());
+        tag(BlockTags.DOORS).add(ModBlocks.REDWOOD_DOOR.get());
     }
 }
