@@ -29,6 +29,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.REDWOOD_BUTTON_ITEM.get());
                         output.accept(ModItems.REDWOOD_LEAVES_ITEM.get());
                         output.accept(ModItems.REDWOOD_SAPLING_ITEM.get());
+                        output.accept(ModItems.WESTERN_SWORD_FERN_ITEM.get());
                     })
                     .build());
 

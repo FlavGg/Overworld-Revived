@@ -4,6 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.foxbatstudios.overworld_revived.block.ModBlocks;
 import net.foxbatstudios.overworld_revived.item.ModCreativeModTabs;
 import net.foxbatstudios.overworld_revived.item.ModItems;
+import net.foxbatstudios.overworld_revived.worldgen.biome.ModTerrablender;
+import net.foxbatstudios.overworld_revived.worldgen.biome.surface.ModSurfaceRules;
+import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,6 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 @Mod(Overworld_Revived.MOD_ID)
 public class Overworld_Revived {
@@ -30,10 +34,12 @@ public class Overworld_Revived {
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+        ModTerrablender.registerBiome();
 
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
 
     }
 

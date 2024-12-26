@@ -41,6 +41,8 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.REDWOOD_FENCE_GATE.get(), new Item.Properties()));
     public static final RegistryObject<BlockItem> REDWOOD_SAPLING_ITEM = ITEMS.register("redwood_sapling_item",
             () -> new BlockItem(ModBlocks.REDWOOD_SAPLING.get(), new Item.Properties()));
+    public static final RegistryObject<BlockItem> WESTERN_SWORD_FERN_ITEM = ITEMS.register("western_sword_fern_item",
+            () -> new BlockItem(ModBlocks.WESTERN_SWORD_FERN.get(), new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

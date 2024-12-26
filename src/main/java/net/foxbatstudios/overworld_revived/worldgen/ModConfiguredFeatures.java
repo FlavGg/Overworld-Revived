@@ -24,9 +24,9 @@ public class ModConfiguredFeatures {
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         register(context, REDWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.REDWOOD_LOG.get()),
-                new GiantTrunkPlacer(5, 4, 3),
+                new GiantTrunkPlacer(23, 3, 2),
                 BlockStateProvider.simple(ModBlocks.REDWOOD_LEAVES.get()),
-                new MegaPineFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), ConstantInt.of(3)),
+                new MegaPineFoliagePlacer(ConstantInt.of(1), ConstantInt.of(3), ConstantInt.of(21)),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 

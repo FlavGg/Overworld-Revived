@@ -45,6 +45,8 @@ public class ModBlocks {
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
     public static final RegistryObject<Block> REDWOOD_SAPLING = registerBlock("redwood_sapling",
             () -> new SaplingBlock(new RedwoodTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> WESTERN_SWORD_FERN = registerBlock("western_sword_fern",
+            () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS)));
 
 
 
