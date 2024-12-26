@@ -2,9 +2,7 @@ package net.foxbatstudios.overworld_revived.block;
 
 import net.foxbatstudios.overworld_revived.Overworld_Revived;
 import net.foxbatstudios.overworld_revived.item.ModItems;
-import net.foxbatstudios.overworld_revived.util.ModTags;
 import net.foxbatstudios.overworld_revived.worldgen.tree.RedwoodTreeGrower;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -55,7 +53,6 @@ public class ModBlocks {
         registerBlockItem(name, toReturn);
         return toReturn;
     }
-
 
     private static <T extends  Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),new Item.Properties()));
